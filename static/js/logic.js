@@ -161,7 +161,7 @@ function getColour(d) {
          d >= 4 ? "chocolate" :
          d >= 3 ? "darkorange" :
          d >= 2 ? "orange" :
-         d >= 1 ? "limegreen" :
-                  "yellowgreen";
+         d >= 1 ? "yellowgreen" :
+                  "limegreen";
 };
 
