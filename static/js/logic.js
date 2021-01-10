@@ -144,7 +144,7 @@ function createMap(earthquakes) {
       //create html items in the div
       
       limits.forEach((l, i) =>  { 
-        div.innerHTML += labels.push('<i style=background:' + getColour(l) + '></i>' + 
+        div.innerHTML += labels.push('<i style=background:' + getColor(l) + '></i>' + 
         l + 
         (limits[i + 1] ? '&ndash;' + limits[i + 1] + '<br>' : '+'));
          div.innerHTML = labels.join("<br>");
@@ -155,8 +155,8 @@ function createMap(earthquakes) {
    // Adding legend to the map
   legend.addTo(myMap);
 }
-// function returns colour code
-function getColour(d) {
+// function returns color code
+function getColor(d) {
   return d >= 5 ? "darkred" :
          d >= 4 ? "chocolate" :
          d >= 3 ? "darkorange" :
